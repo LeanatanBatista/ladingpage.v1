@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: black;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-left: 0.8rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+ul li a:hover {
+    color: #5bacdf;
+}
+
+.btm {
+    background-color: #5bacdf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.btm:hover {
+    background-color: #011927;
+}
+
+.center {
+    display: flex;
+    max-width: 100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.right img {
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+}
+
+.left {
+    max-width: 100%;
+}
+
+.left p {
+    color: #ccc;
+    line-height: 2.5rem;
+}
+
+.title h1 {
+    font-size: 50px;
+    color: #ccc;
+}
+
+button {
+    color: #ffff;
+    background-color: #5bacdf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer
+}
+
+button:hover {
+    background-color: #011927;
+}
+
+aside {
+    display: none;
+}
+
+.contact {
+    margin-top: 2rem;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    background-color: #5bacdf;
+}
+
+/* Responsividade */
+
+@media screen and (max-width:740px){
+    ul {
+        display: none;
+    }
+
+    .links {
+        display: block;
+    }
+
+    .logo {
+        margin-right: 15rem;
+    }
+
+    aside {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        overflow: hidden;
+    }
+
+    #menu-bar {
+        background-color: #5bacdf;
+        width: 0px;
+        height: 200vh;
+        transition: 0.3s all;
+    }
+    
+    .icon-menu ion-icon{
+        width: 45px;
+        height: 45px;
+        margin-right: 1.5rem;
+        margin-top: 2rem;
+        color: #fff;
+    }
+
+    }
+    #menu-bar ul {
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        line-height: 5rem;
+    }
+
+    #menu-bar ul li a {
+        color: #011927;
+        text-decoration: none;
+        font-size: 1rem;
+        width: 100vh;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    #menu-bar ul li a:hover {
+        padding: 8px;
+        border-radius: 15px;
+        background-color: #fff;
+    }
+    
+    .c-icon {
+        margin-top: 40%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        overflow: hidden;
+    }
+
+    .c-icon span {
+        color: #fff;
+        font-size: 1rem;
+    }
+
+@media screen and (max-width: 650px){
+    .title h1{
+        font-size: 2.2rem;
+    }
+    .left {
+        font-size: 1rem;
+        margin-left: 1.5rem;
+        width: 450px;
+    }
+
+    .button {
+        margin-left: 1.5rem;
+    }
+
+    .right img {
+        max-width: 100%;
+        width: 450px;
+        margin-top: 4.5rem;
+    }
+}
